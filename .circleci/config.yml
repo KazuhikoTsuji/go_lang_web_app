@@ -3,7 +3,7 @@ jobs:
   Build-Push:
     docker:
 #      - image: circleci/node:10.19.0-stretch
-      - image: ubuntu
+      - image: circleci/buildpack-deps:18.04-curl-browsers-legacy
     working_directory: ~/workdir
     steps:
       - checkout
