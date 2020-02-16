@@ -20,5 +20,5 @@ jobs:
 workflows:
   Build-image:
     jobs:
-      - Build-Push
+      - Build-Push:
           context: tl_scan_context
