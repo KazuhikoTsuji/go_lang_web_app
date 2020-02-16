@@ -2,7 +2,8 @@ version: 2.1
 jobs:
   Build-Push:
     docker:
-      - image: circleci/node:10.19.0-stretch
+#      - image: circleci/node:10.19.0-stretch
+      - image: ubuntu
     working_directory: ~/workdir
     steps:
       - checkout
