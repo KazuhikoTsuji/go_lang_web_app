@@ -2,8 +2,7 @@ version: 2.1
 jobs:
   Build-Push:
     docker:
-#      - image: circleci/node:10.19.0-stretch
-      - image: circleci/python:3.9-rc-node-browsers-legacy
+      - image: circleci/node:10.19.0-stretch
     working_directory: ~/workdir
     steps:
       - checkout
