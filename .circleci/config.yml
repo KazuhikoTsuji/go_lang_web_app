@@ -10,10 +10,6 @@ jobs:
       - run:
           name: Build
           command: |
-            if [[ $CIRCLE_SHELL_ENV =~ "localbuild" ]]; then
-              sudo chown root /usr/bin/docker
-              sudo chmod u+s /usr/bin/docker
-            fi
             TAG=01
             docker build --no-cache -t $MYREPO/$MYIMAGE:$TAG .
             curl -k -u $TL_USER:$TL_PW --output ./twistcli $TL_CONSOLE/api/v1/util/twistcli
